@@ -13,8 +13,8 @@
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -22,9 +22,7 @@
 	<link href="css/header.css" rel="stylesheet">
 	<link href="css/sidebar.css" rel="stylesheet">
 	<link href="css/content.css" rel="stylesheet">
-	
-	
-	
+
 	<script type="text/javascript" src="js/jquery-ui-1.11.1.js"></script>
 	
 	<!-- loads mdp -->
@@ -34,169 +32,20 @@
   </head>
   <body>
 
-	<div class="fix-pos">
-		<!-- Img -->
-		<div class="container-fluid">
-			<div class="row">
-				<div class="front-img">
-					<img src="img/placeholder.png" style="visibility:hidden">
-				</div>
-			</div>
-		</div>
-	  
-		<!-- Nav -->
-		<nav class="navbar navbar-default">
-			<div class="col-md-1">
-				<ul class="nav nav-pills">
-					<li role="presentation"><span id="menu-toggle" class="glyphicon glyphicon-education edu"></span></li>
-				</ul>
-			</div>
-
-			<div class="col-md-4 col-md-offset-3">
-				<div id="alert-info" class="alert alert-info">
-					<span class="glyphicon glyphicon-info-sign"></span>
-					Pre viac informácií sa prihláste
-					<a href="#" id="hide-alert"><span class="glyphicon glyphicon-remove pull-right"></span></a>
-				</div>
-			</div>
-			
-			<div class="col-md-4">
-				<ul class="nav nav-pills pull-right">
-				  <li role="presentation" class="nav-offset" style="border: 1px solid #000; border-radius: 5px;" ><a href="#" style="color: #000">Registrácia</a></li>
-				  <li role="presentation" class="active nav-offset"><a href="#">Prihlásenie</a></li>
-				</ul>
-			</div>
-		</nav>
-	</div>
+	<div id="header"></div>
 		
 	<div id="wrapper">
         <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li>
-                    <a href="#" id="sidebar-sport">Šport</a>
-                </li>
-				<ul class="sidebar-nav-inner" style="display:none">
-					<li>
-						<a href="#">Futbal</a>
-					</li>
-					<li>
-						<a href="#">Tenis</a>
-					</li>
-					<li>
-						<a href="#">Hokej</a>
-					</li>
-					<li>
-						<a href="#">Florbal</a>
-					</li>
-					<li>
-						<a href="#">Behanie</a>
-					</li>
-					<li>
-						<a href="#">Fitnes</a>
-					</li>
-					<li>
-						<a href="#">Ostatné</a>
-					</li>
-				</ul>
-				
-                <li>
-                    <a href="#">Umenie</a>
-                </li>
-                <li>
-                    <a href="#">Spoločenské hry</a>
-                </li>
-                <li>
-                    <a href="#">Iné</a>
-                </li>
-                <li>
-                    <a href="#">Fórum</a>
-                </li>
-            </ul>
-        </div>
+        <div id="menu"></div>
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-8">
-						<div class="content-main">
-							<div class="row">
-								<h1>Novinky</h1>
-							</div>
-							<div class="row">
-								<div class="news-block">
-									<div class="news-img pull-left">
-									</div>
-									<div class="news-text pull-right">
-										Sobota 17.12.2016
-										<br> 18:00
-										<br> Futbalová liga
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="news-block">
-									<div class="news-img pull-left">
-									</div>
-									<div class="news-text pull-right">
-										Pondelok 26.12.2016
-										<br> 13:00
-										<br> Diskusia na tému:
-										<br> Ako investuje Penta?
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="news-block">
-									<div class="news-img pull-left">
-									</div>
-									<div class="news-text pull-right">
-										Nedela 11.12.2016
-										<br> 18:00
-										<br> Hokejová liga
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4" style="padding-right:0px; ">
-						<div class="affix">
-						<input class="form-control" type="text" placeholder="&#x2315;  Search...">
-						
-						<div class="form-group has-feedback">
-							<input class="form-control spacer" id="altField" type="text">
-							<i class="glyphicon glyphicon-calendar form-control-feedback"></i>
-						</div>
-						<div><div id="with-altField"></div></div>
-						
-						<script>
-						$('#with-altField').multiDatesPicker({
-							altField: '#altField'
-						});
-						</script>
-						</div>
-					</div>
-				</div>
-            </div>
-        </div>
+        <div id="content"></div>
         <!-- /#page-content-wrapper -->
     </div>
 	<!-- /#wrapper -->
-	lopata
-	<div class="news>
-	<div class="news-block">
-		<div class="news-img">
-			Hello
-		</div>
-		<div class="news-text">
-		</div>
-		<div class="testt">
-			Test
-		</div>
-	</div>
-	
+
+	<script src="js/layout-manager.js"></script>
     <script src="js/menu-toggle.js"></script>
 	<script src="js/alert-hide.js"></script>
 	<script src="js/width-correction.js"></script>
