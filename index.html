@@ -1,280 +1,280 @@
 <html><head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/js.cookie.js"></script>
-        <script type="text/javascript" src="js/cookiesMaster.js"></script>
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="index1.css" rel="stylesheet" type="text/css">
-    </head><body>
-        <div class="section">
-            <div class="row">
-                <img src="img/Travel_activities_Wikivoyage_Banner.jpg" class="obrazok">
-            </div>
-        </div>
-        <div class="navbar navbar-default navbar-static-top menu col-md-12">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <ul class="nav navbar-nav defaulthide">
-                <a href="#"><i class="fa fa-3x fa-fw fa-plus-circle ikona-plus text-warning"></i></a>
-                <li>
-                    <a>Pridaj aktivitu</a>
-                </li>
-            </ul>
-            <ul class="list-inline nav navbar-nav navbar-right">
-                <li class="dropdown defaulthide">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Jožko Mrkvička <i class="fa fa-caret-down"></i></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li>
-                            <a href="#" onclick="logoutCookies()">Log out</a>
-                        </li>
-                        <li>
-                            <a href="#">Another action</a>
-                        </li>
-                        <li>
-                            <a href="#">Something else here</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">Separated link</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">One more separated link</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown defaultshow">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Prihlásenie </a>
-                    <ul class="dropdown-menu" role="menu" id="login-dp">
-                        <li>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <form class="form" role="form" accept-charset="UTF-8" id="login-nav">
-                                        <div class="form-group">
-                                            <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Emailová addresa" required="">
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="sr-only" for="exampleInputPassword2">Password</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Heslo" required="">
-                                        </div>
-                                        <div class="form-group">
-                                            <button type="submit" class="btn btn-primary btn-block" onclick="loginCookies()">Prihlásiť sa</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown defaultshow">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Registrácia </a>
-                    <ul class="dropdown-menu" role="menu" id="register-dp">
-                        <li>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <form class="form" role="form" accept-charset="UTF-8" id="login-nav">
-                                        <div class="form-group">
-                                            <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Emailová adresa" required="">
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="sr-only" for="exampleInputPassword2">Password</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Nové heslo" required="">
-                                        </div>
-                                        <div class="form-group">
-                                            <button type="submit" class="btn btn-primary btn-block" onclick="myFunction()">Zaregistrovať sa</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="row">
-            <div class="col-md-2 text-left">
-                <div id="sidebar-wrapper">
-                    <ul class="lead nav sidebar-nav">
-                        <li>
-                            <a href="#" id="sidebar-sport" class="kategorie">Šport</a>
-                        </li>
-                        <ul class="nav sidebar-nav-inner text-info" style="display:none">
-                            <li>
-                                <a href="#">Futbal</a>
-                            </li>
-                            <li>
-                                <a href="#">Tenis</a>
-                            </li>
-                            <li>
-                                <a href="#">Hokej</a>
-                            </li>
-                            <li>
-                                <a href="#">Florbal</a>
-                            </li>
-                            <li>
-                                <a href="#">Behanie</a>
-                            </li>
-                            <li>
-                                <a href="#">Fitnes</a>
-                            </li>
-                            <li>
-                                <a href="#">Ostatné</a>
-                            </li>
-                        </ul>
-                        <li>
-                            <a href="#" class="kategorie">Umenie</a>
-                        </li>
-                        <li>
-                            <a href="#" class="kategorie">Spoločenské hry</a>
-                        </li>
-                        <li>
-                            <a href="#" class="kategorie">Iné</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-7">
-                <h1 class="text-center">Novinky</h1>
-                <ul class="media-list">
-                    <li class="media novinky">
-                        <a class="pull-left"><img class="media-object" src="img/Sports_icon.png" height="250" width="250"></a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Bejzbal</h3>
-                            <p>Pondelok 7.11.2016</p>
-                            <p>21:00</p>
-                            <p>Amateri</p>
-                        </div>
-                        <a class="btn btn-info tlacidlo-novinky">Click me</a>
-                    </li>
-                    <li class="media novinky">
-                        <a class="pull-left"><img class="media-object" src="img/Sports_icon.png" height="250" width="250"></a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Bejzbal</h3>
-                            <p>Pondelok 7.11.2016</p>
-                            <p>21:00</p>
-                            <p>Amateri</p>
-                        </div>
-                        <a class="btn btn-info tlacidlo-novinky">Click me</a>
-                    </li>
-                    <li class="media novinky">
-                        <a class="pull-left"><img class="media-object" src="img/Sports_icon.png" height="250" width="250"></a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Bejzbal</h3>
-                            <p>Pondelok 7.11.2016</p>
-                            <p>21:00</p>
-                            <p>Amateri</p>
-                        </div>
-                        <a class="btn btn-info tlacidlo-novinky">Click me</a>
-                    </li>
-                    <li class="media novinky">
-                        <a class="pull-left"><img class="media-object" src="img/Sports_icon.png" height="250" width="250"></a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Bejzbal</h3>
-                            <p>Pondelok 7.11.2016</p>
-                            <p>21:00</p>
-                            <p>Amateri</p>
-                        </div>
-                        <a class="btn btn-info tlacidlo-novinky">Click me</a>
-                    </li>
-                    <li class="media novinky">
-                        <a class="pull-left"><img class="media-object" src="img/Sports_icon.png" height="250" width="250"></a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Bejzbal</h3>
-                            <p>Pondelok 7.11.2016</p>
-                            <p>21:00</p>
-                            <p>Amateri</p>
-                        </div>
-                        <a class="btn btn-info tlacidlo-novinky">Click me</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <div class="row hladanie">
-                    <div class="input-group">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">Hladaj</button>
-                        </span>
-                        <input type="text" class="form-control" placeholder="Search for...">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/js.cookie.js"></script>
+    <script type="text/javascript" src="js/cookiesMaster.js"></script>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="index1.css" rel="stylesheet" type="text/css">
+  </head><body>
+    <div class="section">
+      <div class="row">
+        <img src="img/Travel_activities_Wikivoyage_Banner.jpg" class="obrazok">
+      </div>
+    </div>
+    <div class="navbar navbar-default navbar-static-top menu col-md-12">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <ul class="nav navbar-nav defaulthide">
+        <a href="#"><i class="fa fa-3x fa-fw fa-plus-circle ikona-plus text-warning"></i></a>
+        <li>
+          <a>Pridaj aktivitu</a>
+        </li>
+      </ul>
+      <ul class="list-inline nav navbar-nav navbar-right">
+        <li class="dropdown defaulthide">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Jožko Mrkvička <i class="fa fa-caret-down"></i></a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="#" onclick="logoutCookies()">Log out</a>
+            </li>
+            <li>
+              <a href="#">Another action</a>
+            </li>
+            <li>
+              <a href="#">Something else here</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">Separated link</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">One more separated link</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown defaultshow">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Prihlásenie </a>
+          <ul class="dropdown-menu" role="menu" id="login-dp">
+            <li>
+              <div class="row">
+                <div class="col-md-12">
+                  <form class="form" role="form" accept-charset="UTF-8" id="login-nav">
+                    <div class="form-group">
+                      <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Emailová addresa" required="">
                     </div>
-                    <!-- /input-group -->
-                    <br>
-                    <div class="month">
-                        <ul class="text-info">
-                            <li class="prev">❮</li>
-                            <li class="next">❯</li>
-                            <li style="text-align:center">November
-                                <br>
-                                <span style="font-size:18px">2016</span>
-                            </li>
-                        </ul>
+                    <div class="form-group">
+                      <label class="sr-only" for="exampleInputPassword2">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Heslo" required="">
                     </div>
-                    <ul class="weekdays">
-                        <li>Mo</li>
-                        <li>Tu</li>
-                        <li>We</li>
-                        <li>Th</li>
-                        <li>Fr</li>
-                        <li>Sa</li>
-                        <li>Su</li>
-                    </ul>
-                    <ul class="days">
-                        <li>31</li>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                        <li>
-                            <span class="active">7</span>
-                        </li>
-                        <li>8</li>
-                        <li>9</li>
-                        <li>10</li>
-                        <li>11</li>
-                        <li>12</li>
-                        <li>13</li>
-                        <li>14</li>
-                        <li>15</li>
-                        <li>16</li>
-                        <li>17</li>
-                        <li>18</li>
-                        <li>19</li>
-                        <li>20</li>
-                        <li>21</li>
-                        <li>22</li>
-                        <li>23</li>
-                        <li>24</li>
-                        <li>25</li>
-                        <li>26</li>
-                        <li>27</li>
-                        <li>28</li>
-                        <li>29</li>
-                        <li>30</li>
-                        <li>31</li>
-                    </ul>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary btn-block" onclick="loginCookies()">Prihlásiť sa</button>
+                    </div>
+                  </form>
                 </div>
-                <script src="js/menu-toggle.js"></script>
-                <script>
-                    $('#with-altField').multiDatesPicker({
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown defaultshow">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Registrácia </a>
+          <ul class="dropdown-menu" role="menu" id="register-dp">
+            <li>
+              <div class="row">
+                <div class="col-md-12">
+                  <form class="form" role="form" accept-charset="UTF-8" id="login-nav">
+                    <div class="form-group">
+                      <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Emailová adresa" required="">
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="exampleInputPassword2">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Nové heslo" required="">
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary btn-block" onclick="myFunction()">Zaregistrovať sa</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col-md-2 text-left">
+        <div id="sidebar-wrapper">
+          <ul class="lead nav sidebar-nav">
+            <li>
+              <a href="#" id="sidebar-sport" class="kategorie">Šport</a>
+            </li>
+            <ul class="nav sidebar-nav-inner text-info" style="display:none">
+              <li>
+                <a href="#">Futbal</a>
+              </li>
+              <li>
+                <a href="#">Tenis</a>
+              </li>
+              <li>
+                <a href="#">Hokej</a>
+              </li>
+              <li>
+                <a href="#">Florbal</a>
+              </li>
+              <li>
+                <a href="#">Behanie</a>
+              </li>
+              <li>
+                <a href="#">Fitnes</a>
+              </li>
+              <li>
+                <a href="#">Ostatné</a>
+              </li>
+            </ul>
+            <li>
+              <a href="#" class="kategorie">Umenie</a>
+            </li>
+            <li>
+              <a href="#" class="kategorie">Spoločenské hry</a>
+            </li>
+            <li>
+              <a href="#" class="kategorie">Iné</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h1 class="text-center">Novinky</h1>
+        <ul class="media-list">
+          <li class="media novinky">
+            <a class="pull-left"><img class="media-object" src="img/Sports_icon.png" height="250" width="250"></a>
+            <div class="media-body">
+              <h3 class="media-heading">Bejzbal</h3>
+              <p>Pondelok 7.11.2016</p>
+              <p>21:00</p>
+              <p>Amateri</p>
+            </div>
+            <a class="btn btn-info tlacidlo-novinky">Click me</a>
+          </li>
+          <li class="media novinky">
+            <a class="pull-left"><img class="media-object" src="img/Sports_icon.png" height="250" width="250"></a>
+            <div class="media-body">
+              <h3 class="media-heading">Bejzbal</h3>
+              <p>Pondelok 7.11.2016</p>
+              <p>21:00</p>
+              <p>Amateri</p>
+            </div>
+            <a class="btn btn-info tlacidlo-novinky">Click me</a>
+          </li>
+          <li class="media novinky">
+            <a class="pull-left"><img class="media-object" src="img/Sports_icon.png" height="250" width="250"></a>
+            <div class="media-body">
+              <h3 class="media-heading">Bejzbal</h3>
+              <p>Pondelok 7.11.2016</p>
+              <p>21:00</p>
+              <p>Amateri</p>
+            </div>
+            <a class="btn btn-info tlacidlo-novinky">Click me</a>
+          </li>
+          <li class="media novinky">
+            <a class="pull-left"><img class="media-object" src="img/Sports_icon.png" height="250" width="250"></a>
+            <div class="media-body">
+              <h3 class="media-heading">Bejzbal</h3>
+              <p>Pondelok 7.11.2016</p>
+              <p>21:00</p>
+              <p>Amateri</p>
+            </div>
+            <a class="btn btn-info tlacidlo-novinky">Click me</a>
+          </li>
+          <li class="media novinky">
+            <a class="pull-left"><img class="media-object" src="img/Sports_icon.png" height="250" width="250"></a>
+            <div class="media-body">
+              <h3 class="media-heading">Bejzbal</h3>
+              <p>Pondelok 7.11.2016</p>
+              <p>21:00</p>
+              <p>Amateri</p>
+            </div>
+            <a class="btn btn-info tlacidlo-novinky">Click me</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <div class="row hladanie">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Hladaj</button>
+            </span>
+            <input type="text" class="form-control" placeholder="Search for...">
+          </div>
+          <!-- /input-group -->
+          <br>
+          <div class="month">
+            <ul class="text-info">
+              <li class="prev">❮</li>
+              <li class="next">❯</li>
+              <li style="text-align:center">November
+                <br>
+                <span style="font-size:18px">2016</span>
+              </li>
+            </ul>
+          </div>
+          <ul class="weekdays">
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+            <li>Su</li>
+          </ul>
+          <ul class="days">
+            <li>31</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>
+              <span class="active">7</span>
+            </li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li>31</li>
+          </ul>
+        </div>
+        <script src="js/menu-toggle.js"></script>
+        <script>
+          $('#with-altField').multiDatesPicker({
                                   					altField: '#altField'
                                   			});
-                </script>
-            </div>
-        </div>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <script>
-            $(document).ready(function () {
+        </script>
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
                            $(window).scroll(function () {
                                if ($(this).scrollTop() > 100) {
                                    $('.scrollup').fadeIn();
@@ -289,8 +289,8 @@
                                return false;
                            });
                        });
-        </script>
-        <a href="#" class="scrollup">Scroll</a>
-    
+    </script>
+    <a href="#" class="scrollup">Scroll</a>
+  
 
 </body></html>
